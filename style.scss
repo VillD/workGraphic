@@ -1,0 +1,95 @@
+// Required
+@import './node_modules/bootstrap/scss/functions';
+@import './node_modules/bootstrap/scss/variables';
+@import './node_modules/bootstrap/scss/variables-dark';
+
+// Create your own map
+$custom-colors: (
+	'gray-100': #f6f5f5,
+	'gray-200': #d2d0cf,
+	'gray-300': #b3afad,
+	'gray-400': #8d8983,
+	'gray-500': #726e68,
+	'gray-600': #615e59,
+	'gray-700': #524f4c,
+	'gray-800': #474643,
+	'gray-900': #2c2b29,
+
+	'green-100': #fbffe4,
+	'green-200': #eaff93,
+	'green-300': #d8ff54,
+	'green-400': #c3f922,
+	'green-500': #9bd302,
+	'green-600': #7fb300,
+	'green-700': #608803,
+	'green-800': #4d6b09,
+	'green-900': #203201,
+
+	'yellow-100': #fbf8ef,
+	'yellow-200': #ede0bb,
+	'yellow-300': #e2c98f,
+	'yellow-400': #d5ac62,
+	'yellow-500': #cc9643,
+	'yellow-600': #be8038,
+	'yellow-700': #9e6530,
+	'yellow-800': #7f522d,
+	'yellow-900': #372213,
+
+	'blue-100': #ecfffe,
+	'blue-200': #a4fdfd,
+	'blue-300': #66f8fa,
+	'blue-400': #20eaf0,
+	'blue-500': #04d0d9,
+	'blue-600': #06a4b4,
+	'blue-700': #0d8391,
+	'blue-800': #146876,
+	'blue-900': #073945,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
+
+:root {
+	--bs-font-sans-serif: 'Bebas Neue', sans-serif;
+	--font-secundary: 'Abel', sans-serif;
+}
+
+.nav-link .active {
+	font-family: var(--font-main);
+}
+.custom-drop {
+	position: relative;
+}
+.drop-hover {
+	position: absolute;
+	left: 10%;
+	display: none;
+	transition: 0.3s all;
+}
+.nav-item a {
+	color: var(--bs-green-500);
+}
+.custom-drop:hover .drop-hover {
+	display: block;
+	position: static;
+}
+.drop-hover li {
+	padding: 8px;
+}
+.drop-hover li a {
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	white-space: nowrap;
+	font-family: var(--font-secundary);
+}
+@media screen and (min-width: 992px) {
+	.custom-drop:hover .drop-hover {
+		display: block;
+		position: absolute;
+	}
+}
