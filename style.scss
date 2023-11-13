@@ -57,6 +57,19 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	--bs-font-sans-serif: 'Bebas Neue', sans-serif;
 	--font-secundary: 'Abel', sans-serif;
 }
+.font-secundary {
+	font-family: var(--font-secundary);
+}
+.header-nav {
+	background-color: #f7f7f700 !important;
+}
+
+.bs-blue-alpha {
+	background-color: hsla(192, 82, 15, 50%);
+}
+.carousel-item img {
+	background-size: cover;
+}
 
 .nav-link .active {
 	font-family: var(--font-main);
