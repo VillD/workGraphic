@@ -15375,7 +15375,7 @@ textarea.form-control-lg {
 }
 
 .bs-blue-alpha {
-  background-color: hsla(192, 82%, 15%, 0.5);
+  background-color: hsla(192, 82%, 15%, 0.6);
 }
 
 .carousel-item img {
@@ -15398,7 +15398,11 @@ textarea.form-control-lg {
 }
 
 .nav-item a {
-  color: var(--bs-green-500);
+  color: var(--bs-green-600);
+}
+
+.nav-item a:hover {
+  color: var(--bs-green-400);
 }
 
 .custom-drop:hover .drop-hover {
@@ -15406,8 +15410,16 @@ textarea.form-control-lg {
   position: static;
 }
 
+.title p {
+  font-family: var(--font-secundary);
+}
+
 .drop-hover li {
   padding: 8px;
+}
+
+.conversemos:hover {
+  background-color: rgba(245, 244, 244, 0.342) !important;
 }
 
 .drop-hover li a {
@@ -15415,7 +15427,11 @@ textarea.form-control-lg {
   display: block;
   width: 100%;
   white-space: nowrap;
-  font-family: var(--font-secundary);
+  font-family: var(--font-main);
+}
+
+a i:hover {
+  color: var(--bs-green-400) !important;
 }
 
 @media screen and (min-width: 992px) {

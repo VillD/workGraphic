@@ -3,8 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>WorkGraphic</title>
+		<link
+			rel="shortcut icon"
+			href="./assets/icons/icon-workgraphic.svg"
+			type="image/x-icon"
+		/>
 		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+		/>
 	</head>
 	<body>
 		<div class="position-relative">
@@ -26,10 +35,10 @@
 							<img src="./assets/icons/icon-box-menu.svg" alt="" />
 						</button>
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav m-auto mb-2 mb-lg-0 fs-5 d-flex gap-2">
+							<ul class="navbar-nav m-auto mb-2 mb-lg-0 fs-4 d-flex gap-2">
 								<li class="nav-item">
 									<a
-										class="nav-link active text-green-700 hover"
+										class="nav-link active text-green-400 hover"
 										aria-current="page"
 										href="#"
 										>INICIO</a
@@ -63,28 +72,18 @@
 							<div class="list-unstyled d-flex gap-2">
 								<li class="nav-item list-unstyled">
 									<a class="nav-link" href="">
-										<img
-											class="green"
-											src="./assets/icons/icon-facebook.svg"
-											alt="icono de facebook"
-										/>
+										<i class="bi bi-facebook fs-5 text-green-600"></i>
 									</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="">
-										<img
-											src="./assets/icons/icon-ig.svg"
-											alt="icono de facebook"
-										/>
+										<i class="bi bi-instagram fs-5 text-green-600"></i>
 									</a>
 								</li>
 
 								<li class="nav-item">
 									<a class="nav-link" href="">
-										<img
-											src="./assets/icons/icon-youtu.svg"
-											alt="icono de instagram"
-										/>
+										<i class="bi bi-youtube fs-5 text-green-600"></i>
 									</a>
 								</li>
 							</div>
@@ -94,9 +93,9 @@
 			</header>
 
 			<main
-				id="carouselExampleControlsNoTouching"
+				id="carouselExampleSlidesOnly"
 				class="carousel slide bs-blue-alpha vh-100"
-				data-bs-touch="false"
+				data-bs-ride="carousel"
 			>
 				<div class="carousel-inner z-n1">
 					<div class="carousel-item active">
@@ -121,33 +120,21 @@
 						/>
 					</div>
 				</div>
-				<button
-					class="carousel-control-prev"
-					type="button"
-					data-bs-target="#carouselExampleControlsNoTouching"
-					data-bs-slide="prev"
-				>
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button
-					class="carousel-control-next"
-					type="button"
-					data-bs-target="#carouselExampleControlsNoTouching"
-					data-bs-slide="next"
-				>
-					<span
-						class="carousel-control-next-icon border-green-500"
-						aria-hidden="true"
-					></span>
-					<span class="visually-hidden">Next</span>
-				</button>
+
 				<div
 					class="title position-absolute d-flex justify-content-center align-items-center flex-column top-50 start-50 translate-middle z-1 gap-3"
 				>
-					<h1 class="text-gray-100">
-						¡Bienvenidos al mundo de la creatividad impresa!
-					</h1>
+					<div class="text-center">
+						<h1 class="text-gray-100 text-center">
+							¡Bienvenidos al mundo de la
+							<mark class="bg-green-400 h-25 px-1 py-0">
+								creatividad impresa</mark
+							>!
+						</h1>
+						<p class="fs-3 text-gray-100">
+							Contáctanos para potenciar tu marca con impresiones que impactan.
+						</p>
+					</div>
 					<div
 						class="d-flex flex-column gap-2 flex-lg-row justify-content-lg-evenly"
 					>
@@ -160,11 +147,21 @@
 
 						<a
 							href=""
-							class="btn bg-transparent fs-4 font-secundary border-2 border-gray-100 text-gray-100 w-100"
+							class="btn bg-transparent fs-4 font-secundary border-2 border-gray-100 text-gray-100 w-100 conversemos"
 						>
 							Convercemos
 						</a>
 					</div>
+				</div>
+
+				<div class="position-absolute bottom-0 end-50 mb-3" role="button">
+					<i class="bi bi-arrow-down text-green-400 fs-4"></i>
+				</div>
+
+				<div class="position-absolute bottom-0 end-0 me-4 mb-4">
+					<a class="d-flex" href="">
+						<img src="./assets/icons/icon-whatssap.svg" width="60" alt="" />
+					</a>
 				</div>
 			</main>
 		</div>
