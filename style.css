@@ -15434,6 +15434,18 @@ a i:hover {
   color: var(--bs-green-400) !important;
 }
 
+.form-control::-moz-placeholder {
+  color: var(--bs-gray-100) !important;
+}
+
+.form-control::placeholder {
+  color: var(--bs-gray-100) !important;
+}
+
+.bg-green-150 {
+  background-color: #f5ffc6 !important;
+}
+
 @media screen and (min-width: 992px) {
   .custom-drop:hover .drop-hover {
     display: block;
