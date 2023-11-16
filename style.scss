@@ -139,6 +139,19 @@ a i:hover {
 .swiper-pagination-bullet-active {
 	background-color: var(--bs-green-500) !important;
 }
+.mision-workgraphic,
+.vision-workgraphic {
+	height: 18rem;
+}
+.box-imagenEquipo {
+	overflow: hidden;
+}
+.imagenEquipo {
+	transition: transform 0.3s;
+}
+.imagenEquipo:hover {
+	transform: scale(1.1);
+}
 
 @keyframes rowBottom {
 	0% {
@@ -149,12 +162,22 @@ a i:hover {
 	}
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
 	.custom-drop:hover .drop-hover {
 		display: block;
 		position: absolute;
 	}
 	.box-form {
 		width: 50%;
+	}
+	.mision-workgraphic,
+	.vision-workgraphic {
+		width: 50%;
+	}
+	.box-nosotros {
+		width: 100%;
+	}
+	.nosotros {
+		height: 38rem;
 	}
 }
