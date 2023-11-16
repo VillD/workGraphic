@@ -22,7 +22,7 @@
 	<body>
 		<div class="position-relative">
 			<!----------NAVEGACION---------->
-			<header class="position-fixed z-2 w-100">
+			<header class="position-fixed z-2 w-100 navBar">
 				<nav class="navbar navbar-expand-lg bg-body-tertiary header-nav">
 					<div class="container-xxl">
 						<a class="navbar-brand" href="#">
@@ -43,7 +43,7 @@
 							<ul class="navbar-nav m-auto mb-2 mb-lg-0 fs-4 d-flex gap-2">
 								<li class="nav-item">
 									<a
-										class="nav-link active text-green-400 hover"
+										class="nav-link active text-green-500 hover"
 										aria-current="page"
 										href="#"
 										>INICIO</a
@@ -74,7 +74,7 @@
 								</li>
 							</ul>
 
-							<div class="list-unstyled d-flex gap-3">
+							<ul class="list-unstyled d-flex gap-3 mb-0">
 								<li class="nav-item list-unstyled">
 									<a class="nav-link" href="">
 										<i class="bi bi-facebook fs-5 text-green-600"></i>
@@ -91,7 +91,7 @@
 										<i class="bi bi-youtube fs-5 text-green-600"></i>
 									</a>
 								</li>
-							</div>
+							</ul>
 						</div>
 					</div>
 				</nav>
@@ -101,7 +101,7 @@
 
 			<main
 				id="carouselExampleSlidesOnly"
-				class="carousel slide bs-blue-alpha vh-100"
+				class="carousel slide bs-blue-alpha vh-100 main-container"
 				data-bs-ride="carousel"
 			>
 				<div class="carousel-inner z-n1">
@@ -161,7 +161,10 @@
 					</div>
 				</div>
 
-				<div class="position-absolute bottom-0 end-50 mb-3" role="button">
+				<div
+					class="position-absolute bottom-0 end-50 mb-3 row-bottom"
+					role="button"
+				>
 					<i class="bi bi-arrow-down text-green-400 fs-4"></i>
 				</div>
 
@@ -402,12 +405,9 @@
 								</div>
 							</article>
 						</div>
-
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination z-0 text-green-400"></div>
 				</div>
 			</section>
 
@@ -419,13 +419,38 @@
 				</p>
 
 				<div
-					class="container-xxl w-75 d-flex justify-content-center flex-column align-items-center"
+					class="box-form container-xxl w-100 d-flex justify-content-center flex-column align-items-center flex-lg-row align-items-lg-stretch"
 				>
-					<div class="bg-green-150 w-75">
-						<p class="h2">WORK GRAPHIC</p>
-						<p>Mantente informado siguiéndonos en nuestras redes sociales</p>
+					<div
+						class="bg-green-150 w-75 text-center py-4 d-lg-flex flex-lg-column justify-content-lg-center rounded-start"
+					>
+						<p class="h1 text-green-500">WORK GRAPHIC</p>
+						<p class="font-secundary mb-0 text-green-900">
+							Mantente informado siguiéndonos en nuestras redes sociales
+						</p>
+
+						<ul class="list-unstyled d-flex gap-3 mx-auto mt-3">
+							<li class="nav-item list-unstyled">
+								<a class="nav-link" href="">
+									<i class="bi bi-facebook fs-5 text-green-500"></i>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="">
+									<i class="bi bi-instagram fs-5 text-green-500"></i>
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="">
+									<i class="bi bi-youtube fs-5 text-green-500"></i>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<form class="container-xxl w-75 bg-green-500 py-4 px-0">
+					<form
+						class="container-xxl w-75 bg-green-500 py-4 px-0 d-flex flex-column justify-content-center align-items-center rounded-end"
+					>
 						<div class="mb-3 w-75">
 							<label
 								for="exampleInputEmail1"
@@ -435,7 +460,7 @@
 							</label>
 							<input
 								type="text"
-								class="form-control font-secundary bg-transparent border border-2 fs-5"
+								class="form-control font-secundary bg-transparent border border-2 fs-5 text-gray-100"
 								id="exampleInputEmail1"
 								placeholder="Nombre de la empresa"
 							/>
@@ -450,7 +475,7 @@
 							</label>
 							<input
 								type="text"
-								class="form-control font-secundary bg-transparent border border-2 fs-5"
+								class="form-control font-secundary bg-transparent border border-2 fs-5 text-gray-100"
 								id="exampleInputPassword1"
 								placeholder="Nombre completo del cliente"
 							/>
@@ -465,7 +490,7 @@
 							</label>
 							<input
 								type="email"
-								class="form-control font-secundary bg-transparent border border-2 fs-5"
+								class="form-control font-secundary bg-transparent border border-2 fs-5 text-gray-100"
 								placeholder="e.j. info@hotmail.com"
 							/>
 						</div>
@@ -480,7 +505,7 @@
 							<input
 								placeholder="e.j. xx-xxx-xxx-xxx"
 								type="number"
-								class="form-control font-secundary bg-transparent border border-2 fs-5"
+								class="form-control font-secundary bg-transparent border border-2 fs-5 text-gray-100"
 								id="exampleInputPassword1"
 							/>
 						</div>
@@ -500,7 +525,7 @@
 						</div>
 						<button
 							type="submit"
-							class="btn btn-primary fs-3 py-1 bg-transparent border border-1 border-gray-100 border border-2"
+							class="btn btn-primary fs-3 py-1 px-4 bg-transparent border border-1 border-gray-100 border border-2"
 						>
 							ENVIAR
 						</button>
@@ -508,34 +533,75 @@
 				</div>
 			</section>
 		</div>
+
+		<footer class="bg-green-700 mb-0">
+			<div class="container-xxl">
+				<div>
+					<a href="">
+						<img
+							src="./assets/images/logo-workGraphic2.svg"
+							alt="Logo de WorkGraphic"
+							width="250"
+						/>
+					</a>
+					<ul class="font-secundary list-unstyled">
+						<li class="mb-0">
+							<a class="text-decoration-none text-gray-100" href="">
+								Direccion: Calle 123, Ciudad, País
+							</a>
+						</li>
+						<li class="mb-0">
+							<a class="text-decoration-none text-gray-100" href=""
+								>Teléfono: +xx-xxxx-xxxx</a
+							>
+						</li>
+						<li class="mb-0">
+							<a class="text-decoration-none text-gray-100" href=""
+								>Email: info@empresa.com</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<p class="h4 text-gray-100">SERVICIOS</p>
+					<ul class="list-unstyled font-secundary">
+						<li class="">
+							<a class="text-gray-100 text-decoration-none" href="">
+								Impresión</a
+							>
+						</li>
+						<li class="">
+							<a class="text-gray-100 text-decoration-none" href=""
+								>Diseño gráfico</a
+							>
+						</li>
+						<li class="">
+							<a class="text-gray-100 text-decoration-none" href=""
+								>Pliublicidad</a
+							>
+						</li>
+						<li class="">
+							<a class="text-gray-100 text-decoration-none" href=""
+								>Marketing</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<p class="h4">SÍGUENOS</p>
+					<div>
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+					</div>
+				</div>
+				<div></div>
+			</div>
+		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 		<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-		<script>
-			var swiper = new Swiper('.mySwiper', {
-				slidesPerView: 1,
-				spaceBetween: 30,
-				freeMode: true,
-				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-				},
-				breakpoints: {
-					768: {
-						slidesPerView: 2,
-						spaceBetween: 20,
-					},
-					968: {
-						slidesPerView: 3,
-						spaceBetween: 20,
-					},
-				},
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
-			})
-		</script>
+		<script src="./index.js"></script>
 	</body>
 </html>

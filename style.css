@@ -15371,7 +15371,16 @@ textarea.form-control-lg {
 }
 
 .header-nav {
+  z-index: 40 !important;
   background-color: rgba(247, 247, 247, 0) !important;
+}
+
+.navBar {
+  transition: background 0.2s;
+}
+
+.active-nav {
+  background-color: var(--bs-gray-100);
 }
 
 .bs-blue-alpha {
@@ -15398,11 +15407,11 @@ textarea.form-control-lg {
 }
 
 .nav-item a {
-  color: var(--bs-green-600);
+  color: var(--bs-green-700);
 }
 
 .nav-item a:hover {
-  color: var(--bs-green-400);
+  color: var(--bs-green-500);
 }
 
 .custom-drop:hover .drop-hover {
@@ -15446,9 +15455,33 @@ a i:hover {
   background-color: #f5ffc6 !important;
 }
 
+.row-bottom {
+  animation: rowBottom 1s linear 2s infinite alternate;
+  transition: transform 0.5s linear;
+}
+
+.row-bottom:hover {
+  transform: scale(1.1) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--bs-green-500) !important;
+}
+
+@keyframes rowBottom {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 @media screen and (min-width: 992px) {
   .custom-drop:hover .drop-hover {
     display: block;
     position: absolute;
+  }
+  .box-form {
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
