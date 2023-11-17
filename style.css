@@ -15485,6 +15485,14 @@ a i:hover {
   transform: scale(1.1);
 }
 
+.textoSuspensivo {
+  display: -webkit-box;
+  white-space: normal;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
 @keyframes rowBottom {
   0% {
     transform: translateY(-10px);

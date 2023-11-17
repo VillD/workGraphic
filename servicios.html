@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Servicios</title>
+		<link
+			rel="shortcut icon"
+			href="./assets/icons/icon-workgraphic.svg"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+	</head>
+	<body>
+		<div class="position-relative">
+			<!----------NAVEGACION---------->
+			<header class="position-fixed z-2 w-100 navBar">
+				<nav class="navbar navbar-expand-lg bg-body-tertiary header-nav">
+					<div class="container-xxl">
+						<a class="navbar-brand" href="#">
+							<img src="./assets/images/logo-workGraphic2.svg" width="200" />
+						</a>
+						<button
+							class="navbar-toggler border-0"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<img src="./assets/icons/icon-box-menu.svg" alt="" />
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav m-auto mb-2 mb-lg-0 fs-4 d-flex gap-2">
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="index.html"
+										>INICIO</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link active text-green-500 hover"
+										href="nosotros.html"
+									>
+										NOSOTROS
+									</a>
+								</li>
+								<!--!-----------------------------------------------------------------------------------------!-->
+								<li class="nav-item dropdown custom-drop">
+									<a class="nav-link" href="./servicios.html"> SERVICIOS </a>
+									<ul class="drop-hover list-unstyled">
+										<li class="">
+											<a class="" href="#">IMPRESIÓN</a>
+										</li>
+										<li><a class="" href="#">MARKETING</a></li>
+										<li><a class="" href="#">PUBLICIDAD</a></li>
+										<li><a class="" href="#">DISEÑO GRÁFICO</a></li>
+									</ul>
+								</li>
+								<!--!-----------------------------------------------------------------------------------------!-->
+
+								<li class="nav-item">
+									<a class="nav-link" href="#">PORTAFOLIO</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">CONCTACTO</a>
+								</li>
+							</ul>
+
+							<ul class="list-unstyled d-flex gap-3 mb-0">
+								<li class="nav-item list-unstyled">
+									<a class="nav-link" href="">
+										<i class="bi bi-facebook fs-5 text-green-600"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="">
+										<i class="bi bi-instagram fs-5 text-green-600"></i>
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="">
+										<i class="bi bi-youtube fs-5 text-green-600"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<!----------CONTENIDO PRINCIPAL / HERO-IMAGES---------->
+
+			<main
+				id="carouselExampleSlidesOnly"
+				class="carousel slide bs-blue-alpha vh-100 main-container"
+				data-bs-ride="carousel"
+			>
+				<div class="carousel-inner z-n1">
+					<div class="carousel-item active">
+						<img
+							src="./assets/images/imagen-serviciosWorkGraphic3.webp"
+							class="d-block w-100 vh-100 object-fit-cover"
+							alt="..."
+						/>
+					</div>
+				</div>
+
+				<div
+					class="title position-absolute d-flex justify-content-center align-items-center flex-column top-50 start-50 translate-middle z-1 gap-3"
+				>
+					<div class="text-center">
+						<h1 class="text-gray-100 text-center">NUESTROS SERVICIOS</h1>
+						<p class="fs-3 text-gray-100">Todo en un solo lugar</p>
+					</div>
+					<div
+						class="d-flex flex-column gap-2 flex-lg-row justify-content-lg-evenly"
+					>
+						<a
+							href=""
+							class="btn btn-green-400 fs-4 font-secundary border-2 border-green-900 text-green-900 w-100"
+						>
+							¡Cotiza ya!
+						</a>
+
+						<a
+							href=""
+							class="btn bg-transparent fs-4 font-secundary border-2 border-gray-100 text-gray-100 w-100 conversemos"
+						>
+							Convercemos
+						</a>
+					</div>
+				</div>
+
+				<div
+					class="position-absolute bottom-0 end-50 mb-3 row-bottom"
+					role="button"
+				>
+					<i class="bi bi-arrow-down text-green-400 fs-4"></i>
+				</div>
+
+				<div class="position-fixed bottom-0 end-0 me-4 mb-4 z-3">
+					<a class="d-flex" href="">
+						<img src="./assets/icons/icon-whatssap.svg" width="60" alt="" />
+					</a>
+				</div>
+			</main>
+
+			<section class="servicios py-5">
+				<div
+					class="container-xxl d-flex flex-wrap gap-4 justify-content-center"
+				>
+					<article class="card" style="width: 20rem">
+						<div class="position-relative">
+							<div
+								class="d-block bs-blue-alpha position-absolute w-100 h-100 top-0"
+							></div>
+							<img
+								src="./assets/images/image-servicioImpresion.png"
+								class="card-img-top w-100 d-block"
+								alt="..."
+							/>
+						</div>
+						<div class="card-body">
+							<h5 class="card-title h4 text-green-400">IMPRESIÓN</h5>
+							<p
+								class="card-text font-secundary textoSuspensivo text-green-900"
+							>
+								Realizamos todo tipo de impresión a full color en una amplia
+								gama de materiales como banner, vinilo adhesivo, vinilo
+								perforado, lona, laminado mate o brillante, reflectivo, 3D
+								Laminado, Lienzo, Lafayet, Troquelado y Repujado
+							</p>
+							<div class="d-lg-flex gap-lg-3 align-items-lg-center">
+								<a
+									href="#"
+									class="btn btn-primary fs-5 font-secundary bg-green-500 text-green-900"
+								>
+									¡Cotiza!
+								</a>
+								<a
+									href="#"
+									class="text-decoration-none fs-5 font-secundary text-green-500 border-bottom border-1 border-green-500"
+								>
+									Ver más <i class="bi bi-box-arrow-up-right"></i>
+								</a>
+							</div>
+						</div>
+					</article>
+
+					<article class="card" style="width: 20rem">
+						<div class="position-relative">
+							<div
+								class="d-block bs-blue-alpha position-absolute w-100 h-100 top-0"
+							></div>
+							<img
+								src="./assets/images/image-servicioDiseño.png"
+								class="card-img-top w-100 d-block"
+								alt="..."
+							/>
+						</div>
+						<div class="card-body">
+							<h5 class="card-title h4 text-green-400">DISEÑO GRÁFICO</h5>
+							<p
+								class="card-text font-secundary textoSuspensivo text-green-900"
+							>
+								Ofrecemos servicios de diseño gráfico que incluyen logotipos,
+								identidad corporativa, tarjetas de visita, papelería
+								corporativa, folletos, gigantografías, flyers, revistas, diseño
+								de envases y etiquetas, y la imagen gráfica para todo tipo de
+								eventos.
+							</p>
+							<div class="d-lg-flex gap-lg-3 align-items-lg-center">
+								<a
+									href="#"
+									class="btn btn-primary fs-5 font-secundary bg-green-500 text-green-900"
+								>
+									¡Cotiza!
+								</a>
+								<a
+									href="#"
+									class="text-decoration-none fs-5 font-secundary text-green-500 border-bottom border-1 border-green-500"
+								>
+									Ver más <i class="bi bi-box-arrow-up-right"></i>
+								</a>
+							</div>
+						</div>
+					</article>
+
+					<article class="card" style="width: 20rem">
+						<img
+							src="./assets/images/image-servicioPublcidad.png"
+							class="card-img-top w-100 d-block"
+							alt="..."
+						/>
+						<div class="card-body">
+							<h5 class="card-title h4 text-green-400">PUBLICIDAD</h5>
+							<p
+								class="card-text font-secundary textoSuspensivo text-green-900"
+							>
+								Nuestros servicios de publicidad incluyen una amplia gama de
+								opciones, desde anuncios en línea hasta publicidad impresa.
+								Podemos ayudarlo a crear una campaña publicitaria personalizada
+								que se adapte a sus necesidades y presupuesto.
+							</p>
+							<div class="d-lg-flex gap-lg-3 align-items-lg-center">
+								<a
+									href="#"
+									class="btn btn-primary fs-5 font-secundary bg-green-500 text-green-900"
+								>
+									¡Cotiza!
+								</a>
+								<a
+									href="#"
+									class="text-decoration-none fs-5 font-secundary text-green-500 border-bottom border-1 border-green-500"
+								>
+									Ver más <i class="bi bi-box-arrow-up-right"></i>
+								</a>
+							</div>
+						</div>
+					</article>
+
+					<article class="card" style="width: 20rem">
+						<img
+							src="./assets/images/image-servicioImpresion.png"
+							class="card-img-top"
+							alt="..."
+						/>
+						<div class="card-body">
+							<h5 class="card-title h4">MARKETING</h5>
+							<p class="card-text font-secundary textoSuspensivo">
+								Nuestros servicios de marketing incluyen una amplia gama de
+								opciones, desde marketing de contenidos hasta marketing de
+								influencers. Podemos ayudarlo a crear una estrategia de
+								marketing personalizada que se adapte a sus necesidades y
+								presupuesto.
+							</p>
+							<div class="row p-1">
+								<a
+									href="#"
+									class="btn btn-primary fs-5 font-secundary bg-green-500 text-green-900 col col-lg-5 me-lg-3"
+								>
+									¡Cotiza!
+								</a>
+								<a
+									href="#"
+									class="btn text-decoration-none fs-5 font-secundary text-green-500 border-bottom border-1 border-green-500col col-lg-5"
+								>
+									Ver más <i class="bi bi-box-arrow-up-right"></i>
+								</a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
