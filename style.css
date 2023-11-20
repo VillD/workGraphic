@@ -15493,6 +15493,11 @@ a i:hover {
   overflow: hidden;
 }
 
+.border-card {
+  width: 90%;
+  height: 90%;
+}
+
 @keyframes rowBottom {
   0% {
     transform: translateY(-10px);
