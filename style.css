@@ -15372,7 +15372,9 @@ textarea.form-control-lg {
 
 .header-nav {
   z-index: 40 !important;
-  background-color: rgba(247, 247, 247, 0) !important;
+  background-color: rgba(247, 247, 247, 0.215) !important;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .navBar {
@@ -15407,11 +15409,11 @@ textarea.form-control-lg {
 }
 
 .nav-item a {
-  color: var(--bs-green-700);
+  color: var(--bs-green-600);
 }
 
 .nav-item a:hover {
-  color: var(--bs-green-500);
+  color: var(--bs-green-400);
 }
 
 .custom-drop:hover .drop-hover {
@@ -15496,6 +15498,14 @@ a i:hover {
 .border-card {
   width: 90%;
   height: 90%;
+}
+
+.trabajosRealizados {
+  width: 18rem;
+  height: 18rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 @keyframes rowBottom {
